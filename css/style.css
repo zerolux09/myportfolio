@@ -1790,3 +1790,60 @@ a.a-btn-3 {
   height: 500px;
   background-attachment: fixed;
 } */
+
+
+/* дизайн модалки */
+
+.modal-title{
+    border-bottom: 3px solid #1f4c74;;
+    width: 220px;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 36px;
+}
+.about-md-works{
+  position: relative;
+  bottom:31px;
+  border-right: 3px solid #1f4c74;; 
+}
+.about-md-works  li{
+  margin-top: 10px;
+  /* padding-top: 10px; */
+  background: #dab433;
+}
+.briefly-about{
+  position:relative;
+  top:28px;
+}
+.briefly-about p {
+  margin-top: 10px;
+  background:#dab433;
+  line-height: 1;
+}
+.photo-items{
+  position: relative;
+  left: 62px;
+  margin-top: 5px;
+  margin-left: 5px;
+  background:#000;
+  height: 100px;
+}
+.briefly-about-prev{
+  position: relative;
+  right: -550px;
+  top: 70px;
+}
+.briefly-about-next{
+position: relative;
+    right: 440px;
+    top: 40px;
+}
+
+.result-work{
+  margin-left: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius:50%;
+  background:#dab433;
+  /* border-radius:20px; */
+}
