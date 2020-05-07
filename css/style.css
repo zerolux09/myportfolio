@@ -213,13 +213,20 @@ h6 {
 }
 
 .promiselist li {
-  position: relative;
-  top: 63px;
-  margin-top: 15px;
-  font-size: 15px;
-  list-style: none;
-  color: #fff;
-  text-shadow: rgb(30, 31, 32) 5px 3px;
+    position: relative;
+    top: 63px;
+    left: 172px;
+    margin-top: 15px;
+    text-align: right;
+    padding: 2px;
+    font-size: 17px;
+    list-style: none;
+    color: #33a3cc;
+    /* text-shadow: rgb(30, 31, 32) 5px 3px; */
+    background: #000000e8;
+    width: 64%;
+    border-radius: 11px;
+    border-bottom-left-radius: 116px;
 }
 .callact {
   margin-top: 20px;
@@ -245,6 +252,16 @@ h6 {
   animation-duration: 2s;
   animation-delay: 1s;
 }
+@media (max-width: 1199px) {
+  #headerwrap h2{
+  top: 1px;
+  }
+}
+@media (max-width: 991px) {
+   .bot-line{display: none;}
+   .top-line{display: none;}   
+   .promiselist{margin-top: 130px;}
+}
 @media (max-width: 868px) {
   #headerwrap h2 {
     position: absolute;
@@ -254,10 +271,44 @@ h6 {
 }
 @media (max-width: 768px) {
   #headerwrap {
-    padding-top: 180px;
+    padding-top: 80px;
+  }
+  #headerwrap h2{
+    width: 90%;
+    margin-left: 20px;
+}
+.promiselist{margin-top: 200px;}
+#headerwrap {
+    background: url(../img/newback.png) no-repeat center right;
   }
 }
-
+@media (max-width: 500px) {
+  #headerwrap h2{
+    /* border-bottom: 1px solid #fff; */
+    font-size: 35px;
+    text-align: center;
+    right: 30px;
+  }
+.promiselist  {
+  position: relative;
+  right: 30px;
+}
+}
+@media (max-width: 400px) {
+.promiselist  {
+  position: relative;
+  right: 185px;
+  width: 500px;
+  
+}
+.promiselist li {
+text-align: center;
+border-bottom-right-radius: 116px;
+}
+.a-btn-3 {
+  right: 10px;
+}
+}
 #social {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -1513,7 +1564,7 @@ a.a-btn-3 {
   font-size: 18px;
   white-space: nowrap;
   text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3);
-  color: #446388;
+  color: #263d58;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
