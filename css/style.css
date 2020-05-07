@@ -176,6 +176,7 @@ h6 {
   font-weight: 1500;
   font-size: 40px;
   color: #ffffff;
+  width: 76%;
 }
 #headerwrap h3 {
   position: relative;
@@ -213,6 +214,22 @@ h6 {
 }
 
 .promiselist li {
+<<<<<<< HEAD
+    position: relative;
+    top: 63px;
+    left: -36px;
+    margin-top: 15px;
+    text-align: left;
+    padding: 2px;
+    font-size: 17px;
+    list-style: none;
+    color: #33a3cc;
+    /* text-shadow: rgb(30, 31, 32) 5px 3px; */
+    background: #000000e8;
+    width: 46%;
+    border-radius: 11px;
+    border-bottom-right-radius: 116px;
+=======
   position: relative;
   top: 63px;
   margin-top: 15px;
@@ -220,6 +237,7 @@ h6 {
   list-style: none;
   color: #fff;
   text-shadow: rgb(30, 31, 32) 5px 3px;
+>>>>>>> parent of 5fdb924... адаптив на хедері готовий
 }
 .callact {
   margin-top: 20px;
@@ -245,6 +263,42 @@ h6 {
   animation-duration: 2s;
   animation-delay: 1s;
 }
+<<<<<<< HEAD
+@media (max-width: 1199px) {
+  #headerwrap h2{
+  top: 1px;
+  }
+  .promiselist{
+    /* margin-top: 130px; */
+    position: relative;
+    /* right: 10px; */
+    width: 850px;
+    }
+    .promiselist li {
+    text-align: center;
+    border-bottom-right-radius: 116px;
+    border-bottom-left-radius: 20px;
+  }
+}
+@media (max-width: 991px) {
+    #headerwrap h2{ text-align: left;}
+    .headerwrap-bg span {font-size: 50px;}
+   .bot-line{display: none;}
+   .top-line{display: none;}   
+   .promiselist{
+    margin-top: 130px;
+    position: relative;
+    /* right: 210px; */
+    width: 850px;
+    }
+  .promiselist li {
+    text-align: center;
+    border-bottom-right-radius: 116px;
+    border-bottom-left-radius: 20px;
+  }
+}
+=======
+>>>>>>> parent of 5fdb924... адаптив на хедері готовий
 @media (max-width: 868px) {
   #headerwrap h2 {
     position: absolute;
@@ -254,10 +308,50 @@ h6 {
 }
 @media (max-width: 768px) {
   #headerwrap {
+<<<<<<< HEAD
+    padding-top: 80px;
+     background: url(../img/newback.png) no-repeat  center right ;
+    width: 100%;
+  }
+  #headerwrap h2{
+    width: 90%;
+    margin-left: 20px;
+}
+.promiselist{margin-top: 160px;margin-left: 20px;}
+
+}
+@media (max-width: 500px) {
+  #headerwrap h2{
+    /* border-bottom: 1px solid #fff; */
+    font-size: 35px;
+    text-align: center;
+    right: 30px;
+  }
+.promiselist  {
+  position: relative;
+  right: 55px;
+}
+}
+@media (max-width: 400px) {
+.promiselist  {
+  position: relative;
+  right: 185px;
+  width: 500px;
+}
+.promiselist li {
+text-align: center;
+border-bottom-right-radius: 116px;
+}
+.a-btn-3 {
+  right: 10px;
+}
+}
+=======
     padding-top: 180px;
   }
 }
 
+>>>>>>> parent of 5fdb924... адаптив на хедері готовий
 #social {
   padding-top: 50px;
   padding-bottom: 50px;
