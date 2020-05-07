@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>
+           Расчет стоимости
+        </title>
+
+        <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/sb-admin.css" rel="stylesheet" type="text/css">
+        <link href="css/stylecalc.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css" type="text/css">
+        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/checkbox.css">
+       
+    </head>
+    <body>
+          <!-- индикаторов загрузки -->
+    <div class="bubblingG">
+  
+        <span id="bubblingG_1">
+        </span>
+        <span id="bubblingG_2">
+        </span>
+        <span id="bubblingG_3">
+        </span>
+      </div>
+        <header>
+        <div id="wrapper">
+            <div class="navbar navbar-default navbar-fixed-top"  role="navigation">
+                <div class="container">
+                  <div class="navbar-header" >
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    <!-- <a class="navbar-brand" href0="index.html" >portfolio</a> -->
+                  </div>
+                  <div class="navbar-collapse collapse">
+                    <img class="navbar-logo " src="/img/logo/finallogo.png" alt="">
+                    <ul class="nav navbar-nav navbar-right">
+                      <li>  <a href="/index.html">Главная</a></li>  
+                      <li><a href="/about.html">Обо мне</a></li>
+                      <li><a href="/services.html">Услуги</a></li>
+                      <li><a href="/works.html">Роботы</a></li>
+                      <li><a href="/contact.html">Контакты</a></li>
+                      <li class="active"><a href="/checkbox.html">Брыф на Услуги</a></li>
+                    </ul>
+                  </div>
+                  <!--/.nav-collapse -->
+                </div>
+              </div>
+            </header>
+                            <ul class="dropdown-menu">
+                                <li><a href="app/budget_planner.html">Budget Planner</a></li>
+                                <li><a href="app/amortization_schedule.html">Amortization Schedule</a></li>
+                                <li><a href="app/home_mortgage.html">Home Mortgage Calc</a></li>
+                                <li><a href="app/home_expense.html">Home Expense Calc</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <section class="section1">
+            <div id="page-wrapper">
+                <!-- <div class="row">
+                    <div class="col-lg-10">
+                        <h2> Вопроссы по заказу</h2>
+                    </div>
+                    <div class="col-lg-2">
+                        <button class="btn btn-primary pull-right" id="show_formula" data-shown="0">Show Formula</button>
+                    </div>
+                </div>
+                <hr> -->
+                <form class="form-tester ">
+                <div class="col-lg-12 text-center">
+            
+                    <hr>
+                    <div class="form-group">
+                        <label class="col-lg-2">Ваше имя (обязательно)
+                            </label>
+                        <div class=" col-lg-2">
+                            <input type="text" class="form-control input-sm" value="например..." data-cell="A1" data-format="$ 0,0.00">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2">Ваше email (обязательно)
+                            </label>
+                        <div class=" col-lg-2">
+                            <input type="text" class="form-control input-sm" value="например..." data-cell="A1" data-format="$ 0,0.00">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2">Ваш номер телефона (обязательно)
+                            </label>
+                        <div class=" col-lg-2">
+                            <input type="text" class="form-control input-sm" value="например..." data-cell="A1" data-format="$ 0,0.00">
+                        </div>
+                    </div>
+                   </div> 
+
+                        <form class="form-horizontal" id="burger"><hr>
+                            <h1 class="form-title ">Калькулятор стоимости сайта</h1>
+                            <div class="col-md-12 ">
+                            <p class="form-p text-center">Добро пожаловать на страницу калькулятора стоимости сайта. Здесь Вы можете рассчитать стоимость создания сайта онлайн. Калькулятор полностью интерактивен и Вы можете добавлять и исключать нужные компоненты формируя тем самым свой уникальный сайт </p>
+                            
+                        </div>
+                            <!-- Тип сайта -->
+                            <div class="form-group">
+                               <div class="col-lg-12">
+                                <hr>
+                                <label class="form-label col-lg-12 text-center">Тип сайта</label>
+                                <p class="form-paragraph">Давайте для начала определимся, с какой целью вам нужен сайт и выберем соответствующий ему тип. В зависимости от выбора, будут подобраны соответствующие модули. Модули можно добавить или исключить ниже. Все наши сайты основаны на базе Pedanto CMS и имеют панель администратора.</p>
+                                <div class="col-lg-4">
+                                    <label class="radio-inline text-center">
+                                        <div class="imgitm" style="background: url(../img/роботи/typesite.jpg)no-repeat  center ; height:200px;"></div>
+                                        <input type="radio" name="burger" data-cell="A1" value="100"> Сайт-Визитка
+                                        <p class="p-ops">Ваш личный сайт, либо сайт вашего предприятия. Как правило содержит до 8 страниц и форму обратной связи. Функционал сайта можно расширить за счет модулей, добавив фотогалерею и другие.</p>
+                                    </label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <label class="radio-inline text-center">
+                                        <div class="imgitm" style="background: url(../img/роботи/typesite.jpg)no-repeat center ; height:200px;"></div>
+                                        <input type="radio" name="burger" data-cell="B1" value="200"> Сайт-Портал
+                                        <p class="p-ops">Информативный, развлекательный портал, интерактивный блог, либо форум. Этот тип сайта является очень функциональным и позволяет создавать действительно крупные проекты со специфическим функционалом.</p>
+                                    </label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <label class="radio-inline text-center">
+                                        <div class="imgitm" style="background: url(../img/роботи/typesite.jpg)no-repeat center ; height:200px;"></div>    
+                                        <input type="radio" name="burger" data-cell="C1" value="300"> Интернет магазин
+                                        <p class="p-ops">Продаете товары? Желаете чтобы у вас был их каталог с возможностью покупки онлайн? Все это вам поможет сделать Интернет-магазин. Функционал сайта можно расширить за счет модулей.</p>
+                                    </label>
+                                </div>
+
+                                <div class="col-lg-offset-9 col-lg-3 text-right type-price">
+                                    <label data-cell="D1" data-formula="SUM(A1:C1)" data-format="$ 0,0.00"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Тип сайта кынець -->
+
+
+                        <!-- Дизайн -->
+                        <div class="form-group">
+                            <hr>
+                                <label class="form-label col-lg-12 text-center">Дизайн</label>
+                                <p class="form-paragraph text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro nulla unde reiciendis quam aut, soluta delectus molestias facilis saepe explicabo harum sunt, expedita vero voluptatem minima doloremque aliquam, ullam rerum!</p>
+                                <div class="col-lg-4">
+                                    <label class="radio-inline text-center">
+                                        <div class="imgitm" style="background: url(../img/роботи/typedesign.jpg)no-repeat center ; height:200px;"></div> 
+                                        <input type="radio" name="softdrink" data-cell="A2" value="20"> Уникализированный шаблон
+                                        <p class="p-ops">Адаптивный дизайн созданный полностью на усмотрение студии Pedanto, c минимальными правками со стороны заказчика (возможность выбора цветовой гаммы и т.п.). Отрисовка предварительного макета не делается.</p>
+                                        
+                                    </label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <label class="radio-inline text-center">
+                                        <div class="imgitm" style="background: url(../img/роботи/typedesign.jpg)no-repeat center ; height:200px;"></div> 
+                                        <input type="radio" name="softdrink" data-cell="B2" value="50"> Уникальный дизайн
+                                        <p class="p-ops">Адаптивный дизайн в котором все элементы согласовываются с заказчиком. Создается предварительный макет базовых страниц в формате PSD/PDF. Разработка занимает больше времени .</p>
+                                    </label>
+                                </div>
+                                <div class="col-lg-4">
+                                    <label class="radio-inline text-center">
+                                        <div class="imgitm" style="background: url(../img/роботи/typedesign.jpg)no-repeat center ; height:200px;"></div> 
+                                        <input type="radio" name="softdrink" data-cell="C2" value="100"> Эксклюзивный (c WOW-эффектом)
+                                       <p class="p-ops"> Адаптивный дизайн в котором все элементы согласовываются с заказчиком. Создается предварительный макет базовых страниц в формате PSD/PDF.В цену включена Разработка логотипа. Разработка занимает больше времени чем "дизайн от Pedanto".</p>
+                                        
+                                    </label>
+                                    <br>
+                                </div>
+                                <div class="col-lg-offset-9 col-lg-3 text-right type-price">
+                                    <label data-cell="D2" data-formula="SUM(A2:C2)" data-format="$ 0,0.00"></label>
+                                </div>
+                            </div>
+                            
+<!-- Дизайн --> 
+
+
+<!-- Сроки -->
+                            <div class="form-group">
+                                
+                                <hr>
+                                <label class="form-label col-lg-12 text-center">Сроки</label>
+                                <p class="p-ops text-center">За какие Сроки вам нужен сайт</p>
+                               
+                                
+
+                                <div class="col-lg-4 text-center">
+                                    <label class="radio-inline1">
+                                        <input type="radio" name="snack" data-cell="A3" value="1" checked> Страндартные
+                                    </label>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <label class="radio-inline1">
+                                        <input type="radio" name="snack" data-cell="B3" value="6"> На Вчера
+                                    </label>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <label class="radio-inline1">
+                                        <input type="radio" name="snack" data-cell="C3" value="0"> Не спешу
+                                    </label>
+                                </div>
+                                <div class="col-lg-offset-9 col-lg-3 text-right time-price">
+                                    <label data-cell="D3" data-formula="SUM(A3:C3)" data-format="$ 0,0.00"></label>
+                                </div>
+                                
+                            </div>
+                           
+
+                            <div class="form-group"><!--не маэ бу груп2 але...-->
+                                
+                                <label class="form-label col-lg-12 text-center"> <hr>CMS</label>
+                                    <p class="p-ops text-center">CMS — это система управления контентом, Пользователю предоставляется возможность наполнять  сайт новой информацией без вмешивания в код</p>
+                                    
+                                    
+                                <div class="col-lg-4 text-center">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="snack" data-cell="A4" value="30"> DLE
+                                        
+                                    </label>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="snack" data-cell="B4" value="100"> WORDPRESS
+                                       
+                                    </label>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="snack" data-cell="C4" value="150">  OPEN CART
+                                    </label>
+                                </div>
+                                <div class=" col-lg-offset-9 col-lg-3 text-right">
+                                    <label data-cell="D4" data-formula="SUM(A4:C4)" data-format="$ 0,0.00"></label>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                
+                                <label class="form-label col-lg-12 text-center"><hr>Наполнение</label>
+                                <p class="p-ops text-center">Наполнение сайта статьями, текстом и графическим материалом поможет донести до посетителей все преимущества вашего торгового предложения</p>
+                                <div class="col-lg-4 text-center">
+                                    <label class="radio-inline ">
+                                        <input type="radio" name="fruit" data-cell="A5" value="2"> Самостоятельно
+                                    </label>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <label class="radio-inline  ">
+                                        <input type="radio" name="fruit" data-cell="B5" value="2.3"> Под ключ 
+                                    </label>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <label class="radio-inline  ">
+                                        <input type="radio" name="fruit" data-cell="C5" value="2.3"> Под ключ 
+                                    </label>
+                                </div>
+
+                                <div class="col-lg-offset-9 col-lg-3 text-right price-container">
+                                    <label data-cell="D5" data-formula="SUM(A5:C5)" data-format="$ 0,0.00"></label>
+                                </div>
+                            <!-- </div> -->
+                         </div>
+                            <div class="form-group">
+                                
+                                <label class="col-lg-offset-9 text-right col-lg-3">Total</label>
+                                <div class="col-lg-3 text-right col-lg-offset-9">
+                                    <label data-cell="D7"  data-format="$ 0,0.00" data-formula="SUM(D1:D6)" ></label>   
+                                </div>
+                            </div>
+                        <!-- </form> -->
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </section>
+
+
+        <section class="section2">
+        <div class="ask-section col-lg-12 text-center">
+            <h1 class="ask-title">О товаре / бренде / услуге</h1>
+            <hr>
+
+
+            <!-- FORM serialize start -->
+            <!-- <form class="form-tester"> -->
+            <div class="form-group">
+                <label class="col-lg-5">Какая тематика бизнеса вашей компании?
+                    </label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control input-sm" name="answer">
+                </div>
+            </div>
+           </div>
+    
+           <div class="col-lg-12 text-center">
+            
+            <hr>
+            <div class="form-group">
+                <label class="col-lg-5">Ще не придумав
+                    </label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control input-sm" name="answer">
+                </div>
+            </div>
+           </div>
+    
+           <div class="col-lg-12 text-center">
+           
+            <hr>
+            <div class="form-group">
+                <label class="col-lg-5">Опишите бренд / продукт / услугу, для которой создается сайт:
+                    </label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control input-smm" name="answer">
+                </div>
+            </div>
+           </div>
+    
+           <div class="col-lg-12 text-center">
+            <h3></h3>
+            <hr>
+            <div class="form-group">
+                <label class="col-lg-5">Уточните ваше месторасположения, а также где будут оказываться услуги:
+                    </label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control input-smm" name="answer">
+                </div>
+            </div>
+           </div>   
+           <div class="col-lg-12 text-center">
+            <h3></h3>
+            <hr>
+
+            <!-- tests -->
+
+            <div class="form-group">
+                <label class="col-lg-5">Перечислите уникальные преимущества бренда / продукта / услуги, для которой создается сайт:
+                    </label>
+                <div class="col-lg-7">
+                   
+                    <input type="text" name="first-name" class="form-control input-sm" >
+                    
+                </div>
+            </div>
+          
+    
+</div> 
+ 
+           <div class="col-lg-12 text-center">
+            <br>
+            <hr>
+            <h3>Постановка задачи</h3>
+            <hr>
+            <div class="form-group">
+                <label class="col-lg-5">Опишите главную задачу котору будет исполнять сайт,<br> Если сайт уже существует, опишите проблемы, требующие решения:
+                    </label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control input-sm" name="answer">
+                </div>
+            </div>
+           </div>   
+           
+
+           <div class="col-lg-12 text-center">
+            
+            <hr>
+            <div class="form-group">
+                <label class="col-lg-5">Опишите целевую аудиторию сайта, кто Ваши основные клиенты:
+                    </label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control input-sm" name="answer">
+                </div>
+            </div>
+           </div>   
+
+           <div class="col-lg-12 text-center">
+            
+            <hr>
+            <div class="form-group">
+                <label class="col-lg-5">Перечислите ваших прямых и косвенных конкурентов, желательно с адресом сайта.
+                    </label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control input-sm" name="answer">
+                </div>
+            </div>
+           </div>   
+
+           <div class="col-lg-12 text-center">
+            
+            <hr>
+            <div class="form-group">
+                <label class="col-lg-5">Дайте вашу оценку их сайтам (работе в интернете в целом), отметьте их положительные и отрицательные стороны:
+                    </label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control input-sm" name="answer">
+                </div>
+            </div>
+           </div>   
+    
+           <div class="col-lg-12 text-center">
+            
+            <hr>
+            <div class="form-group">
+                <label class="col-lg-5">Опишите целевую аудиторию сайта, кто Ваши основные клиенты:
+                    </label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control input-sm" name="answer">
+                </div>
+            </div>
+           </div>   
+
+           <div class="col-lg-12 text-center">
+            
+            <hr>
+            <div class="form-group">
+                <label class="col-lg-5">Укажите планируемые сроки реализации проекта:
+                    </label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control input-sm" name="answer">
+                </div>
+            </div>
+           </div>   
+
+           <div class="col-lg-12 text-center">
+            
+            <hr>
+            <div class="form-group">
+                <label class="col-lg-5">Если у Вас интернет-магазин, выберите нужные параметры:
+                    </label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control input-sm" name="answer">
+                </div>
+            </div>
+           </div>   
+    
+           <div class="col-lg-12 text-center">
+            <h3>Анализ визуального стиля</h3>
+            <hr>
+            <div class="form-group">
+                <label class="col-lg-5">Есть ли у вашей компании логотип или фирменный стиль (брендбук)?
+                    Приложите их к брифу ниже или дайте ссылку на них:
+                    </label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control input-sm" name="answer">
+                </div>
+            </div>
+           </div>   
+
+           <div class="col-lg-12 text-center">
+            <hr>
+            <div class="form-group">
+                <label class="col-lg-5">Перечислите несколько сайтов, которые вам нравятся (независимо от их направленности и тематики).
+                    </label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control input-sm" name="answer">
+                </div>
+            </div>
+           </div>   
+
+           <div class="col-lg-12 text-center">
+           
+            <div class="form-group">
+                <label class="col-lg-5"> Чем они вас привлекают?
+                    </label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control input-sm" name="answer">
+                </div>
+            </div>
+           </div>  
+
+           <div class="col-lg-12 text-center">
+            <hr>
+            <div class="form-group">
+                <label class="col-lg-5">Опишите будущий сайт нескольким прилагательными (например, современный, удобный):
+                    </label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control input-sm" name="answer">
+                </div>
+            </div>
+           </div>   
+
+           <div class="col-lg-12 text-center">
+            <hr>
+            <div class="form-group">
+                <label class="col-lg-5"> Также укажите, каким сайт не должен быть (например, ярким, пафосным).
+                    </label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control input-sm" name="answer">
+                </div>
+            </div>
+           </div>   
+
+           <div class="col-lg-12 text-center">
+            <hr>
+            <div class="form-group">
+                <label class="col-lg-5">Укажите хотя бы 2 определения:
+                    </label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control input-sm" name="answer">
+                </div>
+            </div>
+           </div>   
+                
+           <div class="col-lg-12 text-center">
+            <hr>
+            <div class="form-group">
+                <label class="col-lg-5"> Укажите все, что, с вашей точки зрения, может дополнительно уточнить задачу разработки сайта.
+                    </label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control input-sm" name="answer">
+                </div>
+            </div>
+           </div>  
+
+           <div class="col-lg-12 text-center">
+            <hr>
+            <div class="form-group">
+                <label class="col-lg-5">Если у Вас есть фотографии, которые вы планируете разместить на сайте – напишите об этом. (Если ещё нет, но планируете сделать, уточните это):
+                    </label>
+                <div class="col-lg-7">
+                    <input type="text" class="form-control input-sm" name="answer">
+                </div>
+            </div>
+           </div> 
+           <!-- <input type="submit" name="age" value="push"  id="send-form" class="btn btn-info"> 
+        </form> -->
+</section>    
+          <section class="section3"style="display:none">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+            <h1>2s</h1>
+        <form name="cart">
+            <table name="cart" class="table table-striped table-bordered">
+                <tr>
+                    <th></th>
+                    <th>Item</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>&nbsp;</th>
+                    <th>Item Total</th>
+                </tr>
+                <tr name="line_items">
+                    <td><button name="remove" class="btn btn-danger">Remove</button></td>
+                    <td>Stuff</td>
+                    <td><input type="text" name="qty" value="1"></td>
+                    <td><input type="text" name="price" value="9.99"></td>
+                    <td>&nbsp;</td>
+                    <td><input type="text" name="item_total" value="" jAutoCalc="{qty} * {price}"></td>
+                </tr>
+                <tr name="line_items">
+                    <td><button name="remove" class="btn btn-danger">Remove</button></td>
+                    <td>More Stuff</td>
+                    <td><input type="text" name="qty" value="2"></td>
+                    <td><input type="text" name="price" value="12.50"></td>
+                    <td>&nbsp;</td>
+                    <td><input type="text" name="item_total" value="" jAutoCalc="{qty} * {price}"></td>
+                </tr>
+                <tr name="line_items">
+                    <td><button name="remove" class="btn btn-danger">Remove</button></td>
+                    <td>And More Stuff</td>
+                    <td><input type="text" name="qty" value="3"></td>
+                    <td><input type="text" name="price" value="99.99"></td>
+                    <td>&nbsp;</td>
+                    <td><input type="text" name="item_total" value="" jAutoCalc="{qty} * {price}"></td>
+                </tr>
+                <tr>
+                    <td colspan="3">&nbsp;</td>
+                    <td>Subtotal</td>
+                    <td>&nbsp;</td>
+                    <td><input type="text" name="sub_total" value="" jAutoCalc="SUM({item_total})"></td>
+                </tr>
+                <tr>
+                    <td colspan="3">&nbsp;</td>
+                    <td>
+                        Tax:
+                        <select name="tax">
+                            <option value=".06">CT Tax</option>
+                            <option selected value=".00">Tax Free</option>
+                        </select>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td><input type="text" name="tax_total" value="" jAutoCalc="{sub_total} * {tax}"></td>
+                </tr>
+                <tr>
+                    <td colspan="3">&nbsp;</td>
+                    <td>Total</td>
+                    <td>&nbsp;</td>
+                    <td><input type="text" name="grand_total" value="" jAutoCalc="{sub_total} + {tax_total}"></td>
+                </tr>
+                <tr>
+                    <td colspan="99"><button name="add"  class="btn btn-primary">Add Row</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    </div>
+</div>
+</section> 
+
+
+
+
+<section class="section4">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <!-- <form class="form-horizontal form-tester" id="pizza"> -->
+                <h3>Дополнительные услуги</h3>
+                <hr>
+            <div class="col-lg-6">
+                <!-- <div class="form-group">
+                    <label class="col-lg-4">Если нужной вам услуги нет в списке напишите какую функцию нужно реализовать
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <input type="text" class="form-control input-sm" value="например...слайдер" data-cell="A1" data-format="$ 0,0.00">
+                    </div>
+                </div> -->
+                <div class="form-group">
+                    <label class="col-lg-4">Импорт / экспорт контента
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="12" data-cell="A2">
+                                $ 12.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-4">Лента новостей
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="23" data-cell="A3">
+                                $ 23.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-4">Комментарии к публикациям
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="15" data-cell="A4">
+                                $ 15.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-4">Фотогалерея / портфолио
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="12" data-cell="A5">
+                                $ 12.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-4">Форма обратной связи
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="23" data-cell="A6">
+                                $ 23.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                    <label class="col-lg-4">Обратный звонок
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="15" data-cell="A7">
+                                $ 15.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-4">Форум
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="12" data-cell="A8">
+                                $ 12.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-4">Рекламная система
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="23" data-cell="A9">
+                                $ 23.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-4">Подключение Слайдера
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="15" data-cell="A10">
+                                $ 15.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-4">Подключение Корзины для заказов
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="12" data-cell="A11">
+                                $ 12.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-4">SMS-уведомления
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="23" data-cell="A12">
+                                $ 23.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label class="col-lg-4">Реализация многоязычности
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="15" data-cell="A13">
+                                $ 15.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-4">Оплата картой и онлайн-платежи
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="15" data-cell="A14">
+                                $ 15.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-4"> Расширенный фильтр поиска Выбор валюты
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="15" data-cell="A15">
+                                $ 15.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-4">Парсер товара
+                        
+                        
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="15" data-cell="A16">
+                                $ 15.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-4">Рассчет доставки
+                        
+                        
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="15" data-cell="A17">
+                                $ 15.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-4">Кабинет клиента с историей заказов
+                        
+                        
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="15" data-cell="A18">
+                                $ 15.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-4">Купить в 1 клик
+                        
+                        
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="15" data-cell="A19">
+                                $ 15.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-4">Комментирование товаровВложенияБренды 
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="15" data-cell="A20">
+                                $ 15.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-4">Сравнение
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="15" data-cell="A21">
+                                $ 15.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-4">хиты продажSEO-оптимизацияИзбранное
+                        
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="15" data-cell="A22">
+                                $ 15.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-4">импорт товаров Подключение CRM Сопутствующие товары
+                        
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label>
+                                <input name="checkss" class="my-check" type="checkbox" value="15" data-cell="A23">
+                                $ 15.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-4">Отзывы к товарам и рейтинги товаров 
+                        <!-- Купоны на скидкуЭкспорт -->
+                        </label>
+                    <div class="col-lg-7 text-right">
+                        <div class="checkbox">
+                            <label class="test">
+                                <input name="checkss" class="my-check1" type="checkbox" value="15" data-cell="A24">
+                                $ 15.00
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+                <div class="form-group">
+                    <label class="col-lg-4">Total</label>
+                    <div class="col-lg-5 text-right">
+                        <label data-cell="B1" data-format="$ 0,0.00" data-formula="SUM(A1:A24)"></label>
+                    </div>
+                </div>
+                <input type="submit" name="age" value="push"  id="send-form" class="btn btn-info" > 
+            </form>
+            
+        </div>
+        
+    </section>  
+
+    
+
+    <footer>
+        <div id="copyrights">
+          <div class="container">
+            <p class="text-center">
+              <a href="#"> &copy; 2018-2020</a> |   <strong>Разработка сайтов для бизнеса </strong>| Все права защищены 
+            </p>
+            <div class="credits">
+              <!--
+              
+              -->
+              
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
+
+    <script type="text/javascript" src="/js/serialize.js"></script>
+      <script type="text/javascript" src="/js/obrobka.js"></script>
+
+    <script type="text/javascript" src="js/jquery-calx-sample-2.2.8.js" ></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.js" ></script>
+    <script type="text/javascript" src="/lib/jautocalc/jautocalc.min.js"></script> 
+    <script src="/js/preloeader.js"></script>
+    
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+        
+        <script>
+            $('#pizza, #burger').calx();
+            $('#show_formula').click(function(e){
+                e.preventDefault();
+
+                if($(this).attr('data-shown') == '0'){
+                    $('[data-formula],[data-cell]').each(function(){
+                        $(this).after('<span class="formula">'+$(this).attr('data-cell')+($(this).attr('data-formula') ? ' = '+$(this).attr('data-formula') : '')+'&nbsp;</span>');
+                    });
+
+                    $(this).attr('data-shown', 1).html('Hide Formula');
+                }else{
+                    $('span.formula').remove();
+                    $(this).attr('data-shown', 0).html('Show Formula');
+                }
+            });
+
+        </script>
+        <script>
+            $(document).ready(function() {
+
+function autoCalcSetup() {
+    $('form[name=cart]').jAutoCalc('destroy');
+    $('form[name=cart] tr[name=line_items]').jAutoCalc({keyEventsFire: true, decimalPlaces: 2, emptyAsZero: true});
+    $('form[name=cart]').jAutoCalc({decimalPlaces: 2});
+}
+autoCalcSetup();
+
+
+$('button[name=remove]').click(function(e) {
+    e.preventDefault();
+
+    var form = $(this).parents('form')
+    $(this).parents('tr').remove();
+    autoCalcSetup();
+
+});
+
+$('button[name=add]').click(function(e) {
+    e.preventDefault();
+
+    var $table = $(this).parents('table');
+    var $top = $table.find('tr[name=line_items]').first();
+    var $new = $top.clone(true);
+
+    $new.jAutoCalc('destroy');
+    $new.insertBefore($top);
+    $new.find('input[type=text]').val('');
+    autoCalcSetup();
+
+});
+
+});
+        </script>
+    </body>
+</html>

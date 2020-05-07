@@ -1,0 +1,418 @@
+/* body {
+  background: url(../img/ever-back.jpg) no-repeat cover center top;
+  width: 100%;
+  height: 100%;
+} */
+.section1,
+.section2,
+.section3,
+.section4 {
+  background: url(../img/ever-back2.jpg) no-repeat center top;
+  margin-top: -90px;
+  padding-top: 100px;
+  background-attachment: relative;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body,
+h1,
+h3 {
+  color: white;
+}
+/* h1 - 40px
+   h2 - 
+   label(h1) - 30px 
+   p-ops 16px
+   form-paragraph 14 px
+*/
+
+.form-title {
+  margin-left: 16px;
+}
+.form-horizontal h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.form-horizontal p {
+  line-height: 1.2;
+  font-size: 20px;
+}
+.form-group p {
+  margin-top: 20px;
+}
+.form-group .p-ops {
+  font-size: 16px;
+}
+.form-horizontal .form-p {
+  font-size: 14px;
+}
+.form-horizontal .form-label {
+  font-size: 30px;
+}
+.form-horizontal .form-paragraph {
+  margin-bottom: 50px;
+  font-size: 14px;
+}
+.ask-section {
+  margin-top: 50px;
+}
+.ask-section h1 {
+  margin-bottom: 70px;
+}
+.form-paragraph-1 {
+  margin-top: 30px;
+}
+.form-group .radio-inline {
+  margin-bottom: -50px;
+}
+.input-sm {
+  height: 50px;
+}
+.type-price {
+  margin-top: 80px;
+}
+.price-container {
+  margin-top: 40px;
+}
+
+.section4 .row {
+  margin-right: 30px;
+}
+/* .time-price {
+  position: absolute;
+  top: -150px;
+} */
+
+/* всавка */
+
+.method-title {
+  margin-top: 30px;
+}
+
+.formula {
+  font-size: 10px;
+  display: block;
+}
+
+div.checkbox,
+label.radio-inline {
+  padding-top: 0px !important;
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  margin-top: 1px !important;
+}
+
+#show_formula {
+  margin-top: 20px;
+}
+
+.border-right,
+.diff {
+  border-right: 1px #ccc solid !important;
+  font-weight: 600 !important;
+}
+
+.actual,
+td.actual input {
+  color: #060;
+}
+
+.budget,
+td.budget input {
+  color: #009;
+}
+
+th.small {
+  font-weight: normal;
+}
+
+th.actual,
+th.budget,
+th.diff {
+  text-align: center;
+}
+
+td.budget input {
+  border-color: #009;
+}
+td.budget {
+  background: #ddf;
+}
+
+td.actual input {
+  border-color: #060;
+}
+td.actual {
+  background: #dfd;
+}
+
+td.diff input {
+  border-color: #ccc;
+}
+td.diff {
+  background: #ddd;
+}
+
+td.subheader {
+  height: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.row-total td {
+  background: #dfd;
+  border-top: solid 1px #333 !important;
+}
+
+.row-total input {
+  background: #dfd;
+  border-color: #080 !important;
+  color: #000 !important;
+}
+
+tr.bggrey input {
+  border-color: #ccc;
+}
+
+.w100 input {
+  width: 90px;
+  padding: 0px 2px;
+  height: 25px;
+  text-align: right;
+  font-size: 13px;
+  border-radius: 0;
+}
+
+label.normal {
+  font-weight: normal;
+}
+
+tr.bggrey td {
+  background: #ddd;
+}
+
+tr.bggreen td,
+tr.bgblue td {
+  background: #060;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+tr.bgblue td {
+  background: #006;
+}
+
+.mo-head {
+  font-weight: bold;
+  text-align: center;
+}
+
+td {
+  padding: 2px !important;
+}
+
+.scrollable {
+  margin-bottom: 0;
+}
+
+.scrollable thead {
+  display: block;
+}
+
+.scrollable thead .budget,
+.scrollable thead .actual,
+.scrollable thead .diff {
+  width: 94.325px;
+}
+
+.left-head td,
+.left-head th {
+  width: 240px;
+}
+
+td a.pull-right {
+  color: white;
+}
+
+.scrollable tbody {
+  display: block;
+  max-height: 520px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+hr {
+  margin-top: 3px;
+  margin-bottom: 15px;
+}
+/* кынець */
+/* всавка 2 */
+/* 
+Author: Start Bootstrap - http://startbootstrap.com
+'SB Admin' HTML Template by Start Bootstrap
+
+All Start Bootstrap themes are licensed under Apache 2.0. 
+For more info and more free Bootstrap 3 HTML themes, visit http://startbootstrap.com!
+*/
+
+/* ATTN: This is mobile first CSS - to update 786px and up screen width use the media query near the bottom of the document! */
+
+/* Global Styles */
+
+#wrapper {
+  padding-left: 0;
+}
+
+#page-wrapper {
+  width: 100%;
+  padding: 5px 15px;
+}
+
+/* Nav Messages */
+
+.messages-dropdown .dropdown-menu .message-preview .avatar,
+.messages-dropdown .dropdown-menu .message-preview .name,
+.messages-dropdown .dropdown-menu .message-preview .message,
+.messages-dropdown .dropdown-menu .message-preview .time {
+  display: block;
+}
+
+.messages-dropdown .dropdown-menu .message-preview .avatar {
+  float: left;
+  margin-right: 15px;
+}
+
+.messages-dropdown .dropdown-menu .message-preview .name {
+  font-weight: bold;
+}
+
+.messages-dropdown .dropdown-menu .message-preview .message {
+  font-size: 12px;
+}
+
+.messages-dropdown .dropdown-menu .message-preview .time {
+  font-size: 12px;
+}
+
+/* Nav Announcements */
+
+.announcement-heading {
+  font-size: 50px;
+  margin: 0;
+}
+
+.announcement-text {
+  margin: 0;
+}
+
+/* Table Headers */
+
+table.tablesorter thead {
+  cursor: pointer;
+}
+
+table.tablesorter thead tr th:hover {
+  background-color: #f5f5f5;
+}
+
+/* Flot Chart Containers */
+
+.flot-chart {
+  display: block;
+  height: 400px;
+}
+
+.flot-chart-content {
+  width: 100%;
+  height: 100%;
+}
+
+/* Edit Below to Customize Widths > 768px */
+@media (min-width: 768px) {
+  /* Wrappers */
+
+  #wrapper {
+    padding-left: 225px;
+  }
+
+  #page-wrapper {
+    padding: 15px 25px;
+  }
+
+  /* Side Nav */
+
+  .side-nav {
+    margin-left: -225px;
+    left: 225px;
+    width: 225px;
+    position: fixed;
+    top: 50px;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+    background-color: #222222;
+    overflow-y: auto;
+  }
+
+  /* Bootstrap Default Overrides - Customized Dropdowns for the Side Nav */
+
+  .side-nav > li.dropdown > ul.dropdown-menu {
+    position: relative;
+    min-width: 225px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+
+  .side-nav > li.dropdown > ul.dropdown-menu > li > a {
+    color: #999999;
+    padding: 15px 15px 15px 25px;
+  }
+
+  .side-nav > li.dropdown > ul.dropdown-menu > li > a:hover,
+  .side-nav > li.dropdown > ul.dropdown-menu > li > a.active,
+  .side-nav > li.dropdown > ul.dropdown-menu > li > a:focus {
+    color: #fff;
+    background-color: #080808;
+  }
+
+  .side-nav > li > a {
+    width: 225px;
+  }
+
+  .navbar-inverse .navbar-nav > li > a:hover,
+  .navbar-inverse .navbar-nav > li > a:focus {
+    background-color: #080808;
+  }
+
+  /* Nav Messages */
+
+  .messages-dropdown .dropdown-menu {
+    min-width: 300px;
+  }
+
+  .messages-dropdown .dropdown-menu li a {
+    white-space: normal;
+  }
+}
