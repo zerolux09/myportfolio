@@ -214,6 +214,7 @@ h6 {
 }
 
 .promiselist li {
+<<<<<<< HEAD
     position: relative;
     top: 63px;
     left: -36px;
@@ -228,6 +229,15 @@ h6 {
     width: 46%;
     border-radius: 11px;
     border-bottom-right-radius: 116px;
+=======
+  position: relative;
+  top: 63px;
+  margin-top: 15px;
+  font-size: 15px;
+  list-style: none;
+  color: #fff;
+  text-shadow: rgb(30, 31, 32) 5px 3px;
+>>>>>>> parent of 5fdb924... адаптив на хедері готовий
 }
 .callact {
   margin-top: 20px;
@@ -253,6 +263,7 @@ h6 {
   animation-duration: 2s;
   animation-delay: 1s;
 }
+<<<<<<< HEAD
 @media (max-width: 1199px) {
   #headerwrap h2{
   top: 1px;
@@ -286,6 +297,8 @@ h6 {
     border-bottom-left-radius: 20px;
   }
 }
+=======
+>>>>>>> parent of 5fdb924... адаптив на хедері готовий
 @media (max-width: 868px) {
   #headerwrap h2 {
     position: absolute;
@@ -295,6 +308,7 @@ h6 {
 }
 @media (max-width: 768px) {
   #headerwrap {
+<<<<<<< HEAD
     padding-top: 80px;
      background: url(../img/newback.png) no-repeat  center right ;
     width: 100%;
@@ -332,6 +346,12 @@ border-bottom-right-radius: 116px;
   right: 10px;
 }
 }
+=======
+    padding-top: 180px;
+  }
+}
+
+>>>>>>> parent of 5fdb924... адаптив на хедері готовий
 #social {
   padding-top: 50px;
   padding-bottom: 50px;
