@@ -176,6 +176,7 @@ h6 {
   font-weight: 1500;
   font-size: 40px;
   color: #ffffff;
+  width: 76%;
 }
 #headerwrap h3 {
   position: relative;
@@ -215,18 +216,18 @@ h6 {
 .promiselist li {
     position: relative;
     top: 63px;
-    left: 172px;
+    left: -36px;
     margin-top: 15px;
-    text-align: right;
+    text-align: left;
     padding: 2px;
     font-size: 17px;
     list-style: none;
     color: #33a3cc;
     /* text-shadow: rgb(30, 31, 32) 5px 3px; */
     background: #000000e8;
-    width: 64%;
+    width: 46%;
     border-radius: 11px;
-    border-bottom-left-radius: 116px;
+    border-bottom-right-radius: 116px;
 }
 .callact {
   margin-top: 20px;
@@ -256,11 +257,34 @@ h6 {
   #headerwrap h2{
   top: 1px;
   }
+  .promiselist{
+    /* margin-top: 130px; */
+    position: relative;
+    /* right: 10px; */
+    width: 850px;
+    }
+    .promiselist li {
+    text-align: center;
+    border-bottom-right-radius: 116px;
+    border-bottom-left-radius: 20px;
+  }
 }
 @media (max-width: 991px) {
+    #headerwrap h2{ text-align: left;}
+    .headerwrap-bg span {font-size: 50px;}
    .bot-line{display: none;}
    .top-line{display: none;}   
-   .promiselist{margin-top: 130px;}
+   .promiselist{
+    margin-top: 130px;
+    position: relative;
+    /* right: 210px; */
+    width: 850px;
+    }
+  .promiselist li {
+    text-align: center;
+    border-bottom-right-radius: 116px;
+    border-bottom-left-radius: 20px;
+  }
 }
 @media (max-width: 868px) {
   #headerwrap h2 {
@@ -272,15 +296,15 @@ h6 {
 @media (max-width: 768px) {
   #headerwrap {
     padding-top: 80px;
+     background: url(../img/newback.png) no-repeat  center right ;
+    width: 100%;
   }
   #headerwrap h2{
-    width: 90%;
+    /* width: 90%; */
     margin-left: 20px;
 }
-.promiselist{margin-top: 200px;}
-#headerwrap {
-    background: url(../img/newback.png) no-repeat center right;
-  }
+.promiselist{margin-top: 160px;margin-left: 20px;}
+
 }
 @media (max-width: 500px) {
   #headerwrap h2{
@@ -291,7 +315,7 @@ h6 {
   }
 .promiselist  {
   position: relative;
-  right: 30px;
+  right: 55px;
 }
 }
 @media (max-width: 400px) {
@@ -299,7 +323,6 @@ h6 {
   position: relative;
   right: 185px;
   width: 500px;
-  
 }
 .promiselist li {
 text-align: center;
