@@ -116,6 +116,7 @@
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
+
 }
 .timeline > li > .timeline-panel:before {
   position: absolute;

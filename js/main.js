@@ -545,3 +545,10 @@ for (let buttonIndex = 0; buttonIndex < buttons.length; buttonIndex++) {
 // });
 
 //  let momodaal =
+
+let timelinepanel = document.querySelector('.timeline-panel');
+let showprocces = document.querySelector('.show-procces');
+showprocces.addEventListener('click', function(){
+timelinepanel.style.overflow= 'auto';
+})
+console.log(showprocces);
