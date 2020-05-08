@@ -5,3 +5,31 @@ body {
   height: 500px;
   /* background-attachment: fixed; */
 }
+
+.second-section {
+	padding: 100px 0px;
+}
+
+.second-section .service-item {
+	text-align: center;
+}
+
+.second-section .service-item .icon img {
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.second-section h4 {
+	font-size: 16px;
+	color: #415b90;
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+	.second-section .service-item {
+		margin-bottom: 50px;
+  }
+  
+.service-item{
+  line-height: 1.1;
+  height: 300px;
+}
