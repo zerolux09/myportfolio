@@ -316,15 +316,16 @@ h6 {
 }
 
 #workwrap {
-  background: url(../img/work.jpg) no-repeat center top;
+  background: url(../img/work.png) no-repeat center top;
   margin-top: -70px;
   padding-top: 250px;
   text-align: center;
   background-attachment: relative;
-  background-position: center center;
-  min-height: 650px;
+  background-position: center bottom;
+  min-height: 850px;
   width: 100%;
-
+  
+  z-index: 100;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
@@ -334,8 +335,21 @@ h6 {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  
 }
-
+#fh5co-project {
+     background: url(../img/ever-back6.jpg);
+    /* margin-top: -97px; */
+    /* background-position: center center; */
+    /* height: 1200px; */
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+    bottom: 242px;
+    padding-top: 150px;
+  
+}
 #workwrap h1 {
   color: #ffffff;
   padding-top: 10px;
@@ -1268,16 +1282,7 @@ a {
 svg {
   max-width: 100%;
 }
-#fh5co-project {
-  background: url(../img/ever-back4.jpg) no-repeat center top;
-  /* margin-top: -90px; */
-  /* padding-top: 100px;
-  text-align: center; */
-  background-attachment: relative;
-  background-position: center center;
-  height: 1200px;
-  width: 100%;
-}
+
 .fh5co-heading h2 {
   color: #fff;
   font-size: 60px;
