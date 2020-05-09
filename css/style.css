@@ -317,15 +317,17 @@ h6 {
 
 #workwrap {
   background: url(../img/work.png) no-repeat center top;
+  /* background-color: blue; */
   margin-top: -70px;
   padding-top: 250px;
   text-align: center;
   background-attachment: relative;
   background-position: center bottom;
   min-height: 850px;
+  z-index: 100;
   width: 100%;
   
-  z-index: 100;
+  
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
@@ -344,7 +346,7 @@ h6 {
     /* height: 1200px; */
     width: 100%;
     overflow: hidden;
-    z-index: -1;
+    z-index: 1;
     position: relative;
     bottom: 242px;
     padding-top: 150px;
